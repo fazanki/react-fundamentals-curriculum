@@ -1,0 +1,82 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+	padding:0;
+	margin:0;
+}
+
+#app {
+	height: 100vh;
+}
+
+.wrapper {
+	height:100vh;
+	vertical-align:middle;
+	width:100%;
+	text-align:center;
+	position:relative;
+}
+
+.pattern {
+	position:absolute;
+	z-index:0;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.content {
+	position:relative;
+	margin:0 auto;
+	width:20%;
+	z-index:10;
+	text-align:center;
+}
+ 
+.prompt-container {
+	display:table-cell;
+	height:100vh;
+	vertical-align:middle;
+	header & {
+		display:block;
+		height:auto;
+		float:right;
+	}
+}
+header {
+	background: #f4652d;
+	height:60px;
+	padding:10px;
+}
+.header-heading {
+	margin:0;
+	padding:0;
+	color:#fff;
+	float:left;
+}
+
+.content-header {
+	color:#fff;
+}
+[type="text"] {
+	padding:5px;
+	margin-bottom:10px;
+	header & {
+		margin-right:10px;
+	}
+}
+
+.city-title {
+	text-transform: uppercase;
+	color:#999;
+}
+.fiveDayForcast {
+	list-style:none
+}
+.fiveDayForcast-item {
+	width:30%;
+	float:left;
+}
